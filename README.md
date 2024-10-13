@@ -3,7 +3,7 @@
 [Paper](https://arxiv.org/abs/) | [Code](https://github.com/viiika/Meissonic)
 
 
-![demo](./assets/demos.pdf)
+[demo](./assets/demos.pdf)
 
 ## Introduction
 Meissonic is a non-autoregressive mask image modeling text-to-image synthesis model that can generate high-resolution images. It is designed to run on consumer graphics cards.
