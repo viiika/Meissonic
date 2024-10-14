@@ -19,7 +19,10 @@ device = 'cuda'
 model_path = "MeissonFlow/Meissonic"
 model = Transformer2DModel.from_pretrained(model_path,subfolder="transformer",)
 vq_model = VQModel.from_pretrained(model_path, subfolder="vqvae", )
-text_encoder = CLIPTextModelWithProjection.from_pretrained(model_path,subfolder="text_encoder",)
+# text_encoder = CLIPTextModelWithProjection.from_pretrained(model_path,subfolder="text_encoder",)
+text_encoder = CLIPTextModelWithProjection.from_pretrained(   #using original text enc for stable sampling
+            "laion/CLIP-ViT-H-14-laion2B-s32B-b79K"
+        )
 tokenizer = CLIPTokenizer.from_pretrained(model_path,subfolder="tokenizer",)
 scheduler = Scheduler.from_pretrained(model_path,subfolder="scheduler",)
 pipe=Pipeline(vq_model, tokenizer=tokenizer,text_encoder=text_encoder,transformer=model,scheduler=scheduler)
