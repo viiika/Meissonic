@@ -24,16 +24,18 @@ python inference.py
 
 ## Some Interesting Examples
 ```bash
-Prompt: "a Highly-Beautiful LOGO with a 3D Pure-Color Letter 'M' painted on top with Art Background."
+Prompt: "A pillow with a picture of a Husky on it."
 ```
-![a Highly-B_1024_64_9](https://github.com/user-attachments/assets/fddbb297-2598-4230-8add-45da385daf78)
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b30a7912-5453-48ba-aff4-bfb547bbe626" width="320" alt="A pillow with a picture of a Husky on it.">
+</div>
 
 ```bash
 Prompt: "A white coffee mug, a solid black background"
 ```
-![A white co_1024_64_9](https://github.com/user-attachments/assets/b23a1603-399d-40d6-8e16-c077d3d12a08)
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b23a1603-399d-40d6-8e16-c077d3d12a08" width="320" alt="A white coffee mug, a solid black background">
+</div>
 
 
 
