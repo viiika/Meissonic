@@ -49,4 +49,4 @@ image = pipe(prompt=prompts[0],negative_prompt=negative_prompts,height=resolutio
 
 output_dir = "./output"
 os.makedirs(output_dir, exist_ok=True)
-image.save(output_dir, f"{prompt[0][:10]}_{resolution}_{steps}_{CFG}.png")
+image.save(os.path.join(output_dir, f"{prompts[0][:10]}_{resolution}_{steps}_{CFG}.png"))
