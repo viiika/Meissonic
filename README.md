@@ -22,6 +22,20 @@ pip install -e .
 python inference.py
 ```
 
+## Some Interesting Examples
+```bash
+Prompt: "a Highly-Beautiful LOGO with a 3D Pure-Color Letter 'M' painted on top with Art Background."
+```
+![a Highly-B_1024_64_9](https://github.com/user-attachments/assets/fddbb297-2598-4230-8add-45da385daf78)
+
+
+```bash
+Prompt: "A white coffee mug, a solid black background"
+```
+![A white co_1024_64_9](https://github.com/user-attachments/assets/b23a1603-399d-40d6-8e16-c077d3d12a08)
+
+
+
 
 ## Citation
 If you find this work helpful, please consider citing:
