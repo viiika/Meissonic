@@ -1,0 +1,20 @@
+[
+  {
+    "input":"./assets/outpaint/__G2yFuW7jQjpg",
+    "mask": "./assets/outpaint/__G2yFuW7jQ.png",
+    "prompt": "fall mountains",
+    "negative_prompts": "The artwork avoids the pitfalls of bad art, such as ugly and deformed eyes and faces, poorly drawn, blurry, and disfigured bodies with extra limbs and close-ups that look weird. It also avoids other common issues such as watermarking, text errors, missing fingers or digits, cropping, poor quality, and JPEG artifacts. The artwork is free of signature or watermark and avoids framing issues.The hands are not deformed, the eyes are not disfigured, and there areno extra bodies or limbs. The artwork is not blurry, out of focus, or poorly drawn, and the proportions are not bad or deformed. There are no mutations, missing limbs, or floating or disconnected limbs. The hands and neck are not malformed, and there are no extra heads or out-of-frame elements. The artwork is not low-res or disgusting and is a well-drawn, highly detailed, and beautiful rendering."
+  },
+  {
+    "input":"./assets/outpaint/__G2yFuW7jQjpg",
+    "mask": "./assets/outpaint/__G2yFuW7jQ.png",
+    "prompt": "Rocket launch site",
+    "negative_prompts": "The artwork avoids the pitfalls of bad art, such as ugly and deformed eyes and faces, poorly drawn, blurry, and disfigured bodies with extra limbs and close-ups that look weird. It also avoids other common issues such as watermarking, text errors, missing fingers or digits, cropping, poor quality, and JPEG artifacts. The artwork is free of signature or watermark and avoids framing issues.The hands are not deformed, the eyes are not disfigured, and there areno extra bodies or limbs. The artwork is not blurry, out of focus, or poorly drawn, and the proportions are not bad or deformed. There are no mutations, missing limbs, or floating or disconnected limbs. The hands and neck are not malformed, and there are no extra heads or out-of-frame elements. The artwork is not low-res or disgusting and is a well-drawn, highly detailed, and beautiful rendering."
+  },
+  {
+    "input":"./assets/outpaint/__G2yFuW7jQjpg",
+    "mask": "./assets/outpaint/__G2yFuW7jQ.png",
+    "prompt": "Volcano",
+    "negative_prompts": "The artwork avoids the pitfalls of bad art, such as ugly and deformed eyes and faces, poorly drawn, blurry, and disfigured bodies with extra limbs and close-ups that look weird. It also avoids other common issues such as watermarking, text errors, missing fingers or digits, cropping, poor quality, and JPEG artifacts. The artwork is free of signature or watermark and avoids framing issues.The hands are not deformed, the eyes are not disfigured, and there areno extra bodies or limbs. The artwork is not blurry, out of focus, or poorly drawn, and the proportions are not bad or deformed. There are no mutations, missing limbs, or floating or disconnected limbs. The hands and neck are not malformed, and there are no extra heads or out-of-frame elements. The artwork is not low-res or disgusting and is a well-drawn, highly detailed, and beautiful rendering."
+  }
+]

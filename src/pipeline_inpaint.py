@@ -12,18 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 from typing import Any, Callable, Dict, List, Optional, Tuple, Union
-
 import torch
 from transformers import CLIPTextModelWithProjection, CLIPTokenizer
-
 from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
-from diffusers.models import UVit2DModel, VQModel
-# from diffusers.schedulers import AmusedScheduler
-from training.scheduling import Scheduler
+from diffusers.models import VQModel
 from diffusers.utils import replace_example_docstring
 from diffusers.pipelines.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
-
-from training.transformer import Transformer2DModel
+from src.scheduler import Scheduler
+from src.transformer import Transformer2DModel
 
 EXAMPLE_DOC_STRING = """
     Examples:

@@ -18,9 +18,14 @@ pip install -e .
 ```
 
 ## Usage
-
-```bash
+#### text2image
+```shell
 python inference.py
+```
+#### zero-shot inpaint or outpaint
+```shell
+python inpaint.py --mode inpaint
+python inpaint.py --mode outpaint
 ```
 
 ## Some Interesting Examples

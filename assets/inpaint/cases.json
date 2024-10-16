@@ -1,0 +1,20 @@
+[
+  {
+    "input":"./assets/inpaint/_Rh_zxIUWXA.jpg",
+    "mask": "./assets/inpaint/_Rh_zxIUWXA.png",
+    "prompt": "A woman with short hair wears a silver gas mask.",
+    "negative_prompts": null
+  },
+  {
+    "input":"./assets/inpaint/0eKR4M2uuL8.jpg",
+    "mask": "./assets/inpaint/0eKR4M2uuL8.png",
+    "prompt": "A stylish dog wearing sunglasses.",
+    "negative_prompts": null
+  },
+  {
+    "input":"./assets/inpaint/__Owak0IgJk.jpg",
+    "mask": "./assets/inpaint/__Owak0IgJk.png",
+    "prompt": "A woman wearing a white suspender skirt is sitting",
+    "negative_prompts": null
+  }
+]
