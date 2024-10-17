@@ -1,6 +1,6 @@
 # Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis
 
-[Paper](https://arxiv.org/abs/2410.08261) | [Model](https://huggingface.co/MeissonFlow/Meissonic) | [Code](https://github.com/viiika/Meissonic) | [Gallery](https://sites.google.com/view/meissonic/gallery?authuser=0)
+[Paper](https://arxiv.org/abs/2410.08261) | [Model](https://huggingface.co/MeissonFlow/Meissonic) | [Code](https://github.com/viiika/Meissonic) | [Gallery](https://sites.google.com/view/meissonic/gallery?authuser=0) | [Toturial](https://www.youtube.com/watch?v=PlmifElhr6M)
 
 
 ![demo](./assets/demos.png)
@@ -11,6 +11,12 @@ Meissonic is a non-autoregressive mask image modeling text-to-image synthesis mo
 **Note: This is a project under development. If you encounter any specific performance issues or find significant discrepancies with the results reported in the paper, please submit an issue on the GitHub repository! Thank you for your support!**
 ## Prerequisites
 
+### Install requirements
+```bash
+pip install accelerate pytorch-lightning torch torchvision tqdm transformers diffusers numpy gradio --extra-index-url https://download.pytorch.org.whl/cu124
+```
+
+### Install diffusers
 ```bash
 git clone https://github.com/huggingface/diffusers.git
 cd diffusers
