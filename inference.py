@@ -2,7 +2,6 @@ import os
 import sys
 sys.path.append("./")
 
-
 import torch
 from torchvision import transforms
 from src.transformer import Transformer2DModel
@@ -32,7 +31,7 @@ pipe = pipe.to(device)
 steps = 64
 CFG = 9
 resolution = 1024 
-negative_prompts = "worst quality, low quality, low res, blurry, distortion, watermark, logo, signature, text, jpeg artifacts, signature, sketch, duplicate, ugly, identifying mark"
+negative_prompt = "worst quality, low quality, low res, blurry, distortion, watermark, logo, signature, text, jpeg artifacts, signature, sketch, duplicate, ugly, identifying mark"
 
 prompts = [
     "Two actors are posing for a pictur with one wearing a black and white face paint.",
@@ -45,8 +44,22 @@ prompts = [
     "A woman is standing next to a picture of another woman."
 ]
 
-image = pipe(prompt=prompts[0],negative_prompt=negative_prompts,height=resolution,width=resolution,guidance_scale=CFG,num_inference_steps=steps).images[0]
+batched_generation = False
+num_images = len(prompts) if batched_generation else 1
+
+images = pipe(
+    prompt=prompts[:num_images], 
+    negative_prompt=[negative_prompt] * num_images,
+    height=resolution,
+    width=resolution,
+    guidance_scale=CFG,
+    num_inference_steps=steps
+    ).images
 
 output_dir = "./output"
 os.makedirs(output_dir, exist_ok=True)
-image.save(os.path.join(output_dir, f"{prompts[0][:10]}_{resolution}_{steps}_{CFG}.png"))
+for i, prompt in enumerate(prompts[:num_images]):
+    sanitized_prompt = prompt.replace(" ", "_")
+    file_path = os.path.join(output_dir, f"{sanitized_prompt}_{resolution}_{steps}_{CFG}.png")
+    images[i].save(file_path)
+    print(f"The {i+1}/{num_images} image is saved to {file_path}")
