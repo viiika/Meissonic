@@ -1,6 +1,10 @@
 # Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis
 
-[Paper](https://arxiv.org/abs/2410.08261) | [Model](https://huggingface.co/MeissonFlow/Meissonic) | [Code](https://github.com/viiika/Meissonic) | [Gallery](https://sites.google.com/view/meissonic/gallery?authuser=0) | [Toturial](https://www.youtube.com/watch?v=PlmifElhr6M)
+<a href='https://arxiv.org/abs/2410.08261'><img src='https://img.shields.io/badge/arXiv-2410.08261-b31b1b.svg'></a> &nbsp;
+<a href='https://huggingface.co/MeissonFlow/Meissonic'><img src='https://img.shields.io/badge/Huggingface-Page-Green'></a> &nbsp;
+<a href='https://github.com/viiika/Meissonic'><img src='https://img.shields.io/badge/Github-Page-e6cfe6'></a> &nbsp;
+<a href='https://www.youtube.com/watch?v=PlmifElhr6M'><img src='https://img.shields.io/badge/Youtube-Video-FF8000.svg'></a>&nbsp;
+<a href='https://huggingface.co/spaces/MeissonFlow/meissonic'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue'></a> &nbsp;
 
 
 ![demo](./assets/demos.png)
