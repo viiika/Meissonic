@@ -58,6 +58,14 @@ pip install -e .
 
 
 ## Usage
+
+### Gradio UI (text2image)
+```bash
+python app.py
+```
+
+### Command-line inference
+
 #### text2image
 ```shell
 python inference.py
