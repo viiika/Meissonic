@@ -18,22 +18,20 @@ Meissonic is a non-autoregressive mask image modeling text-to-image synthesis mo
 **Note: This is a project under development. If you encounter any specific performance issues or find significant discrepancies with the results reported in the paper, please submit an issue on the GitHub repository! Thank you for your support!**
 ## Prerequisites
 
-### Install requirements
-
-#### Step 1: Clone the repository
+### Step 1: Clone the repository
 ```bash
 git clone https://github.com/viiika/Meissonic/
 cd Meissonic
 ```
 
-#### Step 2: Create virtual environment
+### Step 2: Create virtual environment
 ```bash
 conda create --name meissonic python
 conda activate meissonic
 pip install -r requirements.txt
 ```
 
-#### Step 3: Install diffusers
+### Step 3: Install diffusers
 ```bash
 git clone https://github.com/huggingface/diffusers.git
 cd diffusers
