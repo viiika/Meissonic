@@ -19,18 +19,53 @@ Meissonic is a non-autoregressive mask image modeling text-to-image synthesis mo
 ## Prerequisites
 
 ### Install requirements
+
+#### Step 1: Clone the repository
 ```bash
-pip install accelerate pytorch-lightning torch torchvision tqdm transformers diffusers numpy gradio --extra-index-url https://download.pytorch.org.whl/cu124
+git clone https://github.com/viiika/Meissonic/
 ```
 
-### Install diffusers
+#### Step 2: Navigate inside the cloned repository
+```bash
+cd Meissonic
+```
+
+#### Step 3: Create virtual environment
+```bash
+python -m venv venv
+```
+
+#### Step 4: Activate virtual environment
+```bash
+venv\scripts\activate
+```
+
+#### Step 5: Install requirements
+```bash
+pip install -r requirements.txt
+```
+
+#### Step 6: Install diffusers
 ```bash
 git clone https://github.com/huggingface/diffusers.git
+```
+```bash
 cd diffusers
+```
+```bash
 pip install -e .
 ```
 
+
 ## Usage
+
+### Gradio UI (text2image)
+```bash
+python app.py
+```
+
+### Command-line inference
+
 #### text2image
 ```shell
 python inference.py
