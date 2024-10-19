@@ -8,7 +8,6 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/viiika/Meissonic)
 [![YouTube](https://img.shields.io/badge/YouTube-Tutorial-FF0000?logo=youtube)](https://www.youtube.com/watch?v=PlmifElhr6M)
 [![Demo](https://img.shields.io/badge/Live-Demo-blue?logo=huggingface)](https://huggingface.co/spaces/MeissonFlow/meissonic)
-[![PyPI version](https://badge.fury.io/py/meissonic.svg)](https://badge.fury.io/py/meissonic)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
@@ -23,6 +22,13 @@ Meissonic is a groundbreaking non-autoregressive masked image modeling framework
 - 🖼️ High-resolution image generation (up to 1024x1024)
 - 💻 Optimized for consumer GPUs
 - 🎨 Versatile applications: text-to-image, inpainting, outpainting
+
+## 📰 News
+- **[Oct 19, 2024]** FP8 inference code is available!
+- **[Oct 18, 2024]** Gradio webui for local inference is available!
+- **[Oct 14, 2024]** [Official Website-Meissonic](https://sites.google.com/view/meissonic/home) is launched!
+- **[Oct 14, 2024]** Meissonic-1.0 is released!
+
 
 ## 🛠️ Installation
 
