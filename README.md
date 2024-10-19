@@ -4,11 +4,10 @@
 <img width="1421" alt="Meissonic Banner" src="https://github.com/user-attachments/assets/703f6882-163a-42d0-8da8-3680231ca75e">
 
 [![arXiv](https://img.shields.io/badge/arXiv-2410.08261-b31b1b.svg)](https://arxiv.org/abs/2410.08261)
-[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-yellow)](https://huggingface.co/MeissonFlow/Meissonic)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/viiika/Meissonic)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Huggingface-Model-yellow)](https://huggingface.co/MeissonFlow/Meissonic)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/viiika/Meissonic)
 [![YouTube](https://img.shields.io/badge/YouTube-Tutorial-FF0000?logo=youtube)](https://www.youtube.com/watch?v=PlmifElhr6M)
 [![Demo](https://img.shields.io/badge/Live-Demo-blue?logo=huggingface)](https://huggingface.co/spaces/MeissonFlow/meissonic)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
 
@@ -16,12 +15,12 @@
 
 ## 🚀 Introduction
 
-Meissonic is a groundbreaking non-autoregressive masked image modeling framework for text-to-image synthesis. It pushes the boundaries of what's possible in AI-generated imagery, producing stunning high-resolution images with unprecedented efficiency on consumer-grade hardware.
+Meissonic is a groundbreaking non-autoregressive masked image modeling model for text-to-image synthesis. It pushes the boundaries of what's possible in content creation, producing stunning high-resolution images with unprecedented efficiency on consumer-grade hardware.
 
 **Key Features:**
 - 🖼️ High-resolution image generation (up to 1024x1024)
-- 💻 Optimized for consumer GPUs
-- 🎨 Versatile applications: text-to-image, inpainting, outpainting
+- 💻 Designed to run on consumer GPUs
+- 🎨 Versatile applications: text-to-image, image-to-image
 
 ## 📰 News
 - **[Oct 19, 2024]** FP8 inference code is available!
@@ -38,12 +37,6 @@ Meissonic is a groundbreaking non-autoregressive masked image modeling framework
 - CUDA-compatible GPU (11.0+)
 
 ### Quick Start
-
-```bash
-pip install meissonic
-```
-
-For development setup:
 
 ```bash
 git clone https://github.com/viiika/Meissonic
@@ -130,7 +123,7 @@ We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for 
 
 ## 📄 License
 
-Meissonic is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Meissonic is released under the Apache-2.0 license. See the [LICENSE](LICENSE) file for more details.
 
 ## 🙏 Acknowledgements
 
@@ -145,5 +138,5 @@ We'd like to thank the open-source community and our contributors for their inva
 </p>
 
 <p align="center">
-  Made with ❤️ by the Meissonic Team
+  Made with ❤️ by the MeissonFlow Research
 </p>
