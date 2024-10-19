@@ -21,7 +21,6 @@ Meissonic is a groundbreaking non-autoregressive masked image modeling framework
 
 **Key Features:**
 - 🖼️ High-resolution image generation (up to 1024x1024)
-- ⚡ Lightning-fast inference times
 - 💻 Optimized for consumer GPUs
 - 🎨 Versatile applications: text-to-image, inpainting, outpainting
 
