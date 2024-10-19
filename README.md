@@ -58,6 +58,24 @@ python inpaint.py --mode inpaint
 python inpaint.py --mode outpaint
 ```
 
+### fp8 quantization 
+
+Requirements:
+- CUDA 12.4 
+- torch==2.4.1
+- torchao 
+
+```shell
+python inference_fp8.py --quantization fp8 
+```
+
+| **Precision (Step=64, Res=1024)** | **BS=1 (Average Time)** | **Mem**  |
+|-----------------------------------|--------------------------|---------|
+| fp32                              | 13.32s                   | 12G     |
+| fp16                              | 12.35s                   | 9.5G    |
+| fp8                               | 12.93s                   | 8.7G    |
+
+
 ## Some Interesting Examples
 ```bash
 Prompt: "A pillow with a picture of a Husky on it."
