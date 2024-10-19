@@ -1,100 +1,115 @@
-# Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis
-<div align="center">
-<img width="1421" alt="image" src="https://github.com/user-attachments/assets/703f6882-163a-42d0-8da8-3680231ca75e">
+# Meissonic: Revolutionary Masked Generative Transformers for High-Resolution Text-to-Image Synthesis
 
-<a href='https://arxiv.org/abs/2410.08261'><img src='https://img.shields.io/badge/arXiv-2410.08261-b31b1b.svg'></a> &nbsp;
-<a href='https://huggingface.co/MeissonFlow/Meissonic'><img src='https://img.shields.io/badge/Huggingface-Page-Green'></a> &nbsp;
-<a href='https://github.com/viiika/Meissonic'><img src='https://img.shields.io/badge/Github-Page-e6cfe6'></a> &nbsp;
-<a href='https://www.youtube.com/watch?v=PlmifElhr6M'><img src='https://img.shields.io/badge/Youtube-Toturial-FF8000.svg'></a>&nbsp;
-<a href='https://huggingface.co/spaces/MeissonFlow/meissonic'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-Demo-blue'></a> &nbsp;
+<div align="center">
+<img width="1421" alt="Meissonic Banner" src="https://github.com/user-attachments/assets/703f6882-163a-42d0-8da8-3680231ca75e">
+
+[![arXiv](https://img.shields.io/badge/arXiv-2410.08261-b31b1b.svg)](https://arxiv.org/abs/2410.08261)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-yellow)](https://huggingface.co/MeissonFlow/Meissonic)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/viiika/Meissonic)
+[![YouTube](https://img.shields.io/badge/YouTube-Tutorial-FF0000?logo=youtube)](https://www.youtube.com/watch?v=PlmifElhr6M)
+[![Demo](https://img.shields.io/badge/Live-Demo-blue?logo=huggingface)](https://huggingface.co/spaces/MeissonFlow/meissonic)
+[![PyPI version](https://badge.fury.io/py/meissonic.svg)](https://badge.fury.io/py/meissonic)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
 
-![demo](./assets/demos.png)
+![Meissonic Demos](./assets/demos.png)
 
-## Introduction
-Meissonic is a non-autoregressive mask image modeling text-to-image synthesis model that can generate high-resolution images. It is designed to run on consumer graphics cards.
+## 🚀 Introduction
 
-**Note: This is a project under development. If you encounter any specific performance issues or find significant discrepancies with the results reported in the paper, please submit an issue on the GitHub repository! Thank you for your support!**
-## Prerequisites
+Meissonic is a groundbreaking non-autoregressive masked image modeling framework for text-to-image synthesis. It pushes the boundaries of what's possible in AI-generated imagery, producing stunning high-resolution images with unprecedented efficiency on consumer-grade hardware.
 
-### Step 1: Clone the repository
+**Key Features:**
+- 🖼️ High-resolution image generation (up to 1024x1024)
+- ⚡ Lightning-fast inference times
+- 💻 Optimized for consumer GPUs
+- 🎨 Versatile applications: text-to-image, inpainting, outpainting
+
+## 🛠️ Installation
+
+### Prerequisites
+
+- Python 3.8+
+- CUDA-compatible GPU (11.0+)
+
+### Quick Start
+
 ```bash
-git clone https://github.com/viiika/Meissonic/
-cd Meissonic
+pip install meissonic
 ```
 
-### Step 2: Create virtual environment
+For development setup:
+
 ```bash
-conda create --name meissonic python
+git clone https://github.com/viiika/Meissonic
+cd Meissonic
+conda create --name meissonic python=3.8
 conda activate meissonic
 pip install -r requirements.txt
 ```
 
-### Step 3: Install diffusers
-```bash
-git clone https://github.com/huggingface/diffusers.git
-cd diffusers
-pip install -e .
-```
+## 💡 Usage
 
+### Gradio Web UI
 
-## Usage
+Experience Meissonic through our intuitive web interface:
 
-### Gradio UI (text2image)
 ```bash
 python app.py
 ```
 
-### Command-line inference
+### Command-line Interface
 
-#### text2image
+#### Text-to-Image Generation
+
 ```shell
-python inference.py
-```
-#### zero-shot inpaint or outpaint
-```shell
-python inpaint.py --mode inpaint
-python inpaint.py --mode outpaint
+python inference.py --prompt "Your creative prompt here"
 ```
 
-### fp8 quantization 
+#### Inpainting and Outpainting
+
+```shell
+python inpaint.py --mode inpaint --input_image path/to/image.jpg
+python inpaint.py --mode outpaint --input_image path/to/image.jpg
+```
+
+### Advanced: FP8 Quantization
+
+Optimize performance with FP8 quantization:
 
 Requirements:
-- CUDA 12.4 
-- torch==2.4.1
-- torchao 
+- CUDA 12.4
+- PyTorch 2.4.1
+- TorchAO
 
 ```shell
-python inference_fp8.py --quantization fp8 
+python inference_fp8.py --quantization fp8
 ```
 
-| **Precision (Step=64, Res=1024)** | **BS=1 (Average Time)** | **Mem**  |
-|-----------------------------------|--------------------------|---------|
-| fp32                              | 13.32s                   | 12G     |
-| fp16                              | 12.35s                   | 9.5G    |
-| fp8                               | 12.93s                   | 8.7G    |
+#### Performance Benchmarks
 
+| Precision (Steps=64, Resolution=1024x1024) | Batch Size=1 (Avg. Time) | Memory Usage |
+|-------------------------------------------|--------------------------|--------------|
+| FP32                                      | 13.32s                   | 12GB         |
+| FP16                                      | 12.35s                   | 9.5GB        |
+| FP8                                       | 12.93s                   | 8.7GB        |
 
-## Some Interesting Examples
-```bash
-Prompt: "A pillow with a picture of a Husky on it."
-```
+## 🎨 Showcase
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/b30a7912-5453-48ba-aff4-bfb547bbe626" width="320" alt="A pillow with a picture of a Husky on it.">
+  <p><i>"A pillow with a picture of a Husky on it."</i></p>
 </div>
 
-```bash
-Prompt: "A white coffee mug, a solid black background"
-```
 <div align="center">
   <img src="https://github.com/user-attachments/assets/b23a1603-399d-40d6-8e16-c077d3d12a08" width="320" alt="A white coffee mug, a solid black background">
+  <p><i>"A white coffee mug, a solid black background"</i></p>
 </div>
 
+## 📚 Citation
 
+If Meissonic contributes to your research, please cite our paper:
 
-## Citation
-If you find this work helpful, please consider citing:
 ```bibtex
 @article{bai2024meissonic,
   title={Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis},
@@ -103,3 +118,27 @@ If you find this work helpful, please consider citing:
   year={2024}
 }
 ```
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started.
+
+## 📄 License
+
+Meissonic is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## 🙏 Acknowledgements
+
+We'd like to thank the open-source community and our contributors for their invaluable support in making Meissonic a reality.
+
+---
+
+<p align="center">
+  <a href="https://star-history.com/#viiika/Meissonic&Date">
+    <img src="https://api.star-history.com/svg?repos=viiika/Meissonic&type=Date" alt="Star History Chart">
+  </a>
+</p>
+
+<p align="center">
+  Made with ❤️ by the Meissonic Team
+</p>
