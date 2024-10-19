@@ -6,7 +6,8 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2410.08261-b31b1b.svg)](https://arxiv.org/abs/2410.08261)
 [![Hugging Face](https://img.shields.io/badge/🤗%20Huggingface-Model-yellow)](https://huggingface.co/MeissonFlow/Meissonic)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/viiika/Meissonic)
-[![YouTube](https://img.shields.io/badge/YouTube-Tutorial-FF0000?logo=youtube)](https://www.youtube.com/watch?v=PlmifElhr6M)
+[![YouTube](https://img.shields.io/badge/YouTube-Tutorial_EN-FF0000?logo=youtube)](https://www.youtube.com/watch?v=PlmifElhr6M)
+[![YouTube](https://img.shields.io/badge/YouTube-Tutorial_JA-FF0000?logo=youtube)](https://www.youtube.com/watch?v=rJDrf49wF64)
 [![Demo](https://img.shields.io/badge/Live-Demo-blue?logo=huggingface)](https://huggingface.co/spaces/MeissonFlow/meissonic)
 
 </div>
@@ -15,7 +16,7 @@
 
 ## 🚀 Introduction
 
-Meissonic is a groundbreaking non-autoregressive masked image modeling model for text-to-image synthesis. It pushes the boundaries of what's possible in content creation, producing stunning high-resolution images with unprecedented efficiency on consumer-grade hardware.
+Meissonic is a non-autoregressive mask image modeling text-to-image synthesis model that can generate high-resolution images. It is designed to run on consumer graphics cards.
 
 **Key Features:**
 - 🖼️ High-resolution image generation (up to 1024x1024)
@@ -119,7 +120,7 @@ If Meissonic contributes to your research, please cite our paper:
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started.
+We welcome contributions! 
 
 ## 📄 License
 
@@ -127,7 +128,7 @@ Meissonic is released under the Apache-2.0 license. See the [LICENSE](LICENSE) f
 
 ## 🙏 Acknowledgements
 
-We'd like to thank the open-source community and our contributors for their invaluable support in making Meissonic a reality.
+We thank the community and contributors for their invaluable support in developing Meissonic. We thank apolinario@multimodal.art for making Meissonic DEMO. We thank @NewGenAI and @飛鷹しずか@自称文系プログラマの勉強 for making YouTube toturials.
 
 ---
 
