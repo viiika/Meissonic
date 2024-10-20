@@ -1,0 +1,12 @@
+accelerate
+bitsandbytes
+diffusers
+open_clip_torch
+datasets
+torchvision
+peft
+pillow
+wandb
+dask
+pyarrow
+huggingface_hub
