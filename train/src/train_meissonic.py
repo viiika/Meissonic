@@ -45,7 +45,7 @@ from transformers import (
 
 import diffusers.optimization
 from diffusers import EMAModel, VQModel 
-from scheduling import Scheduler
+from src.scheduler import Scheduler
 from diffusers.loaders import LoraLoaderMixin
 from diffusers.utils import is_wandb_available
 
@@ -56,6 +56,7 @@ from dataset_utils import tokenize_prompt, encode_prompt
 from torchvision.utils import save_image,make_grid
 
 from src.transformer import Transformer2DModel
+from src.pipeline import Pipeline
 
 if is_wandb_available():
     import wandb
@@ -359,10 +360,10 @@ def main(args):
     if args.allow_tf32:
         torch.backends.cuda.matmul.allow_tf32 = True
 
-    if args.pretrained_model_architecture == "Meissonic":
-        from src.pipeline import Pipeline
-    else:
-        raise ValueError(f"Unknown model architecture: {args.pretrained_model_architecture}")
+    # if args.pretrained_model_architecture == "Meissonic":
+    #     from src.pipeline import Pipeline
+    # else:
+    #     raise ValueError(f"Unknown model architecture: {args.pretrained_model_architecture}")
 
 
     logging_dir = Path(args.output_dir, args.logging_dir)
