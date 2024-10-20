@@ -1,4 +1,4 @@
-# Meissonic: Revolutionary Masked Generative Transformers for High-Resolution Text-to-Image Synthesis
+# Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis
 
 <div align="center">
 <img width="1421" alt="Meissonic Banner" src="https://github.com/user-attachments/assets/703f6882-163a-42d0-8da8-3680231ca75e">
@@ -23,35 +23,31 @@ Meissonic is a non-autoregressive mask image modeling text-to-image synthesis mo
 - 💻 Designed to run on consumer GPUs
 - 🎨 Versatile applications: text-to-image, image-to-image
 
-## 📰 News
-- **[Oct 19, 2024]** FP8 inference code is available!
-- **[Oct 18, 2024]** Gradio webui for local inference is available!
-- **[Oct 14, 2024]** [Official Website-Meissonic](https://sites.google.com/view/meissonic/home) is launched!
-- **[Oct 14, 2024]** Meissonic-1.0 is released!
+## 🛠️ Prerequisites
 
-
-## 🛠️ Installation
-
-### Prerequisites
-
-- Python 3.8+
-- CUDA-compatible GPU (11.0+)
-
-### Quick Start
-
+### Step 1: Clone the repository
 ```bash
-git clone https://github.com/viiika/Meissonic
+git clone https://github.com/viiika/Meissonic/
 cd Meissonic
-conda create --name meissonic python=3.8
+```
+
+### Step 2: Create virtual environment
+```bash
+conda create --name meissonic python
 conda activate meissonic
 pip install -r requirements.txt
+```
+
+### Step 3: Install diffusers
+```bash
+git clone https://github.com/huggingface/diffusers.git
+cd diffusers
+pip install -e .
 ```
 
 ## 💡 Usage
 
 ### Gradio Web UI
-
-Experience Meissonic through our intuitive web interface:
 
 ```bash
 python app.py
@@ -61,13 +57,13 @@ python app.py
 
 #### Text-to-Image Generation
 
-```shell
+```bash
 python inference.py --prompt "Your creative prompt here"
 ```
 
 #### Inpainting and Outpainting
 
-```shell
+```bash
 python inpaint.py --mode inpaint --input_image path/to/image.jpg
 python inpaint.py --mode outpaint --input_image path/to/image.jpg
 ```
@@ -107,7 +103,7 @@ python inference_fp8.py --quantization fp8
 
 ## 📚 Citation
 
-If Meissonic contributes to your research, please cite our paper:
+If you find this work helpful, please consider citing:
 
 ```bibtex
 @article{bai2024meissonic,
@@ -118,17 +114,9 @@ If Meissonic contributes to your research, please cite our paper:
 }
 ```
 
-## 🤝 Contributing
-
-We welcome contributions! 
-
-## 📄 License
-
-Meissonic is released under the Apache-2.0 license. See the [LICENSE](LICENSE) file for more details.
-
 ## 🙏 Acknowledgements
 
-We thank the community and contributors for their invaluable support in developing Meissonic. We thank apolinario@multimodal.art for making Meissonic DEMO. We thank @NewGenAI and @飛鷹しずか@自称文系プログラマの勉強 for making YouTube toturials.
+We thank the community and contributors for their invaluable support in developing Meissonic. We thank apolinario@multimodal.art for making Meissonic DEMO. We thank @NewGenAI and @飛鷹しずか@自称文系プログラマの勉強 for making YouTube toturials. We thank @pprp for making fp8 and int4 quantization. 
 
 ---
 
