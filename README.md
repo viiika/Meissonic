@@ -9,6 +9,7 @@
 [![YouTube](https://img.shields.io/badge/YouTube-Tutorial_EN-FF0000?logo=youtube)](https://www.youtube.com/watch?v=PlmifElhr6M)
 [![YouTube](https://img.shields.io/badge/YouTube-Tutorial_JA-FF0000?logo=youtube)](https://www.youtube.com/watch?v=rJDrf49wF64)
 [![Demo](https://img.shields.io/badge/Live-Demo-blue?logo=huggingface)](https://huggingface.co/spaces/MeissonFlow/meissonic)
+[![Replicate](https://replicate.com/chenxwh/meissonic/badge)](https://replicate.com/chenxwh/meissonic)
 
 </div>
 
