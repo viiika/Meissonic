@@ -78,8 +78,19 @@ Requirements:
 - PyTorch 2.4.1
 - TorchAO
 
+Note: Windows users install TorchAO using
+```shell
+pip install --pre torchao --index-url https://download.pytorch.org/whl/nightly/cpu
+```
+
+Command-line inference
 ```shell
 python inference_fp8.py --quantization fp8
+```
+
+Gradio for FP8 (Select Quantization Method in Advanced settings)
+```shell
+python app_fp8.py
 ```
 
 #### Performance Benchmarks
