@@ -77,6 +77,7 @@ Requirements:
 - CUDA 12.4
 - PyTorch 2.4.1
 - TorchAO
+
 Note: Windows users install TorchAO using
 ```shell
 pip install --pre torchao --index-url https://download.pytorch.org/whl/nightly/cpu
