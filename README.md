@@ -83,6 +83,7 @@ Note: Windows users install TorchAO using
 pip install --pre torchao --index-url https://download.pytorch.org/whl/nightly/cpu
 ```
 
+Command-line inference
 ```shell
 python inference_fp8.py --quantization fp8
 ```
