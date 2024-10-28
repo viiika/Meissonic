@@ -844,7 +844,7 @@ def main(args):
                     bs = pixel_values.shape[0]
                     image_tokens.append(
                         vq_model.quantize(vq_model.encode(pixel_values[start_idx:end_idx]).latents)[2][2].reshape(
-                            bs, -1
+                            split_batch_size, -1
                         )
                     )
                 image_tokens = torch.cat(image_tokens, dim=0)
