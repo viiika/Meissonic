@@ -128,7 +128,7 @@ If you find this work helpful, please consider citing:
 
 ## 🙏 Acknowledgements
 
-We thank the community and contributors for their invaluable support in developing Meissonic. We thank apolinario@multimodal.art for making Meissonic [Demo](https://huggingface.co/spaces/MeissonFlow/meissonic). We thank @NewGenAI and @飛鷹しずか@自称文系プログラマの勉強 for making YouTube tutorials. We thank @pprp for making fp8 and int4 quantization. We thank @camenduru for making [jupyter tutorial](https://github.com/camenduru/Meissonic-jupyter). We thank @chenxwh for making Replicate demo and api. 
+We thank the community and contributors for their invaluable support in developing Meissonic. We thank apolinario@multimodal.art for making Meissonic [Demo](https://huggingface.co/spaces/MeissonFlow/meissonic). We thank @NewGenAI and @飛鷹しずか@自称文系プログラマの勉強 for making YouTube tutorials. We thank @pprp for making fp8 and int4 quantization. We thank @camenduru for making [jupyter tutorial](https://github.com/camenduru/Meissonic-jupyter). We thank @chenxwh for making Replicate demo and api. We thank Collov Labs for reproducing [Monetico](https://huggingface.co/Collov-Labs/Monetico).
 
 ---
 
