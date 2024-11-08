@@ -20,9 +20,7 @@ model = Transformer2DModel.from_pretrained(model_path, subfolder="transformer", 
 vq_model = VQModel.from_pretrained(model_path, subfolder="vqvae", torch_dtype=dtype)
 # text_encoder = CLIPTextModelWithProjection.from_pretrained(model_path,subfolder="text_encoder", torch_dtype=dtype)
 text_encoder = CLIPTextModelWithProjection.from_pretrained(   #using original text enc for stable sampling
-            "laion/CLIP-ViT-H-14-laion2B-s32B-b79K"
-        torch_dtype=dtype
-    )
+            "laion/CLIP-ViT-H-14-laion2B-s32B-b79K",torch_dtype=dtype)
 tokenizer = CLIPTokenizer.from_pretrained(model_path, subfolder="tokenizer", torch_dtype=dtype)
 scheduler = Scheduler.from_pretrained(model_path, subfolder="scheduler")
 pipe=Pipeline(vq_model, tokenizer=tokenizer,text_encoder=text_encoder,transformer=model,scheduler=scheduler)

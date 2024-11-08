@@ -184,7 +184,7 @@ class InpaintPipeline(DiffusionPipeline):
                 The targeted height, width crop coordinates. See the micro-conditioning section of
                 https://arxiv.org/abs/2307.01952.
             temperature (`Union[int, Tuple[int, int], List[int]]`, *optional*, defaults to (2, 0)):
-                Configures the temperature scheduler on `self.scheduler` see `AmusedScheduler#set_timesteps`.
+                Configures the temperature scheduler on `self.scheduler` see `Scheduler#set_timesteps`.
 
         Examples:
 
