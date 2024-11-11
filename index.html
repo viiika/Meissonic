@@ -10,13 +10,13 @@
 
   <title>Meissonic</title>
 
-<script>
+<!-- <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-MRQC0YFE17');
-</script>
+</script> -->
 
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
@@ -71,7 +71,7 @@
             More Research
           </a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://noyii.github.io/meissonic">
+            <a class="navbar-item" href="https://viiika.github.io/meissonic">
               Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis
             </a>
           </div>
@@ -155,9 +155,9 @@
 
 
   <section class="hero teaser">
-    <div class="hero-body">
+    <div class="hero-body" style="max-width: 1200px; margin: 0 auto; text-align: center;">
       <div class="container is-max-desktop">
-        <img src="https://github.com/viiika/Meissonic/blob/main/assets/demos.png" alt="Teaser Image" height="100%">
+        <img src="./assets/demos.png" alt="Teaser Image" width="80%" style="display: block; margin: 0 auto;">
         <h2 class="subtitle has-text-centered">
           Meissonic is a non-autoregressive mask image modeling text-to-image synthesis model that can generate high-resolution images. It is designed to run on consumer graphics cards.
         </h2>
@@ -185,7 +185,219 @@
 
   </section>
 
+  <section class="method">
+    <div class="container is-max-desktop">
 
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Method</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              The Meissonic model is architected to facilitate efficient high-performance text-to-image synthesis through an integrated framework comprising a CLIP text encoder, a vector-quantized (VQ) image encoder and decoder, and a multi-modal Transformer backbone. 
+            </p>
+          </div>
+
+          <div class="container is-max-desktop">
+            <img src="./assets/architecture.png" alt="Image0" height="100%">
+          </div>
+
+          <div class="content has-text-justified">
+            <p>
+              During the image generation process, discrete tokens are created randomly according to a predefined schedule. Meissonic then applies masking and performs predictions over several steps to reconstruct all tokens and decode the resulting image. In the case of image editing, the original image is converted into discrete tokens, which are masked according to a specified masking strategy. After a series of processing steps, the masked tokens are reconstructed and utilized to decode the target image. Text prompt and other conditions are incorporated to control the synthesis process. 
+
+              *R* represents the masking rate condition, and *C* represents the micro conditions. *Comp.* and *Decomp.* denote feature compression layers and feature decompression layers, respectively.
+
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Style Diversity</h2>
+
+          <div class="container is-max-desktop">
+            <img src="./assets/style_comparison_appendix.png" alt="Image0" height="100%">
+          </div>
+
+          <!-- <div class="content has-text-justified">
+            <p>
+              Demonstration of ability to generate diverse styles.
+            </p>
+          </div> -->
+
+          <!-- <div class="container is-max-desktop">
+            <img src="./assets/style_comparison_appendix.png" alt="Image0" height="100%">
+          </div>
+
+          <div class="content has-text-justified">
+            <p>
+              Demonstration of ability to generate diverse styles.
+            </p>
+          </div> -->
+
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Zero-Shot Image-to-Image</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              With Mask.
+            </p>
+          </div> 
+          <div class="container is-max-desktop">
+            <img src="./assets/edit_demo.png" alt="Image0" style="width: 90%; max-width: 1000px;">
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              Without Mask.
+            </p>
+          </div> 
+          <div class="container is-max-desktop">
+            <img src="./assets/edit_demo2.png" alt="Image0" style="width: 70%; max-width: 1000px;">
+          </div>
+          
+
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+  
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Efficiency Performance</h2>
+  
+       
+          <div class="columns is-multiline is-centered">
+            
+            <div class="column is-half">
+              <img src="./assets/GPU_Memory_Comparison.png" alt="Image0" style="width: 100%; max-width: 500px;">
+            </div>
+  
+            
+            <div class="column is-half">
+              <img src="./assets/Inference_Time_Comparison.png" alt="Image0" style="width: 100%; max-width: 500px;">
+            </div>
+          </div>
+
+  
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+
+  <div class="section">
+    <div class="container" style="max-width: 800px;">
+      <h2 class="title has-text-centered">More Samples</h3>
+      <div id="results-carousel" class="carousel results-carousel carousel-control-prev carousel-inner" data-ride="carousel">
+          <div class="results-item">
+            <img src="./assets/appendix_figure_1.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_2.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_3.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_4.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_5.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_6.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_7.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_8.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_9.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_10.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_11.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_12.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_13.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_14.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_15.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_16.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_17.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_18.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_hps_1.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_hps_2.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_hps_3.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_hps_4.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_hps_5.png" height="100">
+          </div>
+          <div class="results-item">
+            <img src="./assets/appendix_figure_hps_6.png" height="100">
+          </div>
+
+      </div>
+
+  </div class="section">
+  
+  
+  
 
   <section class="section" id="BibTeX">
     <div class="container content is-max-desktop">
@@ -198,17 +410,6 @@
 }</code></pre>
   </div>
   </section>
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="content has-text-centered">
-        <p>
-          The website template is borrowed from HyperNeRF.
-        </p>
-      </div>
-    </div>
-  </footer>
 
   <script type="text/javascript" src="./static/slick/slick.js"></script>
 </body>
