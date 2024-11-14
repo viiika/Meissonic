@@ -19,6 +19,8 @@
 
 Meissonic is a non-autoregressive mask image modeling text-to-image synthesis model that can generate high-resolution images. It is designed to run on consumer graphics cards.
 
+![Architecture](./assets/architecture.png)
+
 **Key Features:**
 - 🖼️ High-resolution image generation (up to 1024x1024)
 - 💻 Designed to run on consumer GPUs
