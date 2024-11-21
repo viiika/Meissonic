@@ -11,6 +11,7 @@
 [![Demo](https://img.shields.io/badge/Live-Demo-blue?logo=huggingface)](https://huggingface.co/spaces/MeissonFlow/meissonic)
 [![Replicate](https://replicate.com/chenxwh/meissonic/badge)](https://replicate.com/chenxwh/meissonic)
 
+[![arXiv](https://img.shields.io/badge/arXiv-2411.10781-b31b1b.svg)](https://arxiv.org/abs/2411.10781)
 </div>
 
 ![Meissonic Demos](./assets/demos.png)
@@ -128,9 +129,19 @@ If you find this work helpful, please consider citing:
 }
 ```
 
+```bibtex
+@article{shao2024bagdesignchoicesinference,
+  title={Bag of Design Choices for Inference of High-Resolution Masked Generative Transformer}, 
+  author={Shitong Shao and Zikai Zhou and Tian Ye and Lichen Bai and Zhiqiang Xu and Zeke Xie},
+  journal={arXiv preprint arXiv:2411.10781},
+  year={2024}
+}
+```
+
 ## 🙏 Acknowledgements
 
-We thank the community and contributors for their invaluable support in developing Meissonic. We thank apolinario@multimodal.art for making Meissonic [Demo](https://huggingface.co/spaces/MeissonFlow/meissonic). We thank @NewGenAI and @飛鷹しずか@自称文系プログラマの勉強 for making YouTube tutorials. We thank @pprp for making fp8 and int4 quantization. We thank @camenduru for making [jupyter tutorial](https://github.com/camenduru/Meissonic-jupyter). We thank @chenxwh for making Replicate demo and api. We thank Collov Labs for reproducing [Monetico](https://huggingface.co/Collov-Labs/Monetico).
+We thank the community and contributors for their invaluable support in developing Meissonic. We thank apolinario@multimodal.art for making Meissonic [Demo](https://huggingface.co/spaces/MeissonFlow/meissonic). We thank @NewGenAI and @飛鷹しずか@自称文系プログラマの勉強 for making YouTube tutorials. We thank @pprp for making fp8 and int4 quantization. We thank @camenduru for making [jupyter tutorial](https://github.com/camenduru/Meissonic-jupyter). We thank @chenxwh for making Replicate demo and api. We thank Collov Labs for reproducing [Monetico](https://huggingface.co/Collov-Labs/Monetico). We thank [Shitong et al.](https://arxiv.org/abs/2411.10781) for identifying effective design choices for enhancing visual quality.
+
 
 ---
 
