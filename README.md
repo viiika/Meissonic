@@ -4,12 +4,15 @@
 <img width="1421" alt="Meissonic Banner" src="https://github.com/user-attachments/assets/703f6882-163a-42d0-8da8-3680231ca75e">
 
 [![arXiv](https://img.shields.io/badge/arXiv-2410.08261-b31b1b.svg)](https://arxiv.org/abs/2410.08261)
-[![Hugging Face](https://img.shields.io/badge/🤗%20Huggingface-Model-yellow)](https://huggingface.co/MeissonFlow/Meissonic)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Huggingface-Model_Meissonic-yellow)](https://huggingface.co/MeissonFlow/Meissonic)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/viiika/Meissonic)
 [![YouTube](https://img.shields.io/badge/YouTube-Tutorial_EN-FF0000?logo=youtube)](https://www.youtube.com/watch?v=PlmifElhr6M)
 [![YouTube](https://img.shields.io/badge/YouTube-Tutorial_JA-FF0000?logo=youtube)](https://www.youtube.com/watch?v=rJDrf49wF64)
-[![Demo](https://img.shields.io/badge/Live-Demo-blue?logo=huggingface)](https://huggingface.co/spaces/MeissonFlow/meissonic)
+[![Demo](https://img.shields.io/badge/Live-Demo_Meissonic-blue?logo=huggingface)](https://huggingface.co/spaces/MeissonFlow/meissonic)
 [![Replicate](https://replicate.com/chenxwh/meissonic/badge)](https://replicate.com/chenxwh/meissonic)
+
+[![Hugging Face](https://img.shields.io/badge/🤗%20Huggingface-Model_Monetico-yellow)](https://huggingface.co/Collov-Labs/Monetico)
+[![Demo](https://img.shields.io/badge/Live-Demo_Monetico-blue?logo=huggingface)](https://huggingface.co/spaces/Collov-Labs/Monetico)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2411.10781-b31b1b.svg)](https://arxiv.org/abs/2411.10781)
 </div>
@@ -125,15 +128,6 @@ If you find this work helpful, please consider citing:
   title={Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis},
   author={Bai, Jinbin and Ye, Tian and Chow, Wei and Song, Enxin and Chen, Qing-Guo and Li, Xiangtai and Dong, Zhen and Zhu, Lei and Yan, Shuicheng},
   journal={arXiv preprint arXiv:2410.08261},
-  year={2024}
-}
-```
-
-```bibtex
-@article{shao2024bagdesignchoicesinference,
-  title={Bag of Design Choices for Inference of High-Resolution Masked Generative Transformer}, 
-  author={Shitong Shao and Zikai Zhou and Tian Ye and Lichen Bai and Zhiqiang Xu and Zeke Xie},
-  journal={arXiv preprint arXiv:2411.10781},
   year={2024}
 }
 ```
