@@ -342,7 +342,7 @@ class FusedFluxAttnProcessor2_0:
             value = torch.cat([encoder_hidden_states_value_proj, value], dim=2)
 
         if image_rotary_emb is not None:
-            from .embeddings import apply_rotary_emb
+            from diffusers.models.embeddings import apply_rotary_emb
 
             query = apply_rotary_emb(query, image_rotary_emb)
             key = apply_rotary_emb(key, image_rotary_emb)
@@ -370,7 +370,7 @@ class FusedFluxAttnProcessor2_0:
 
 
 @maybe_allow_in_graph
-class   SingleTransformerBlock(nn.Module):
+class  SingleTransformerBlock(nn.Module):
     r"""
     A Transformer block following the MMDiT architecture, introduced in Stable Diffusion 3.
 
@@ -685,105 +685,6 @@ class Simple_UVitBlock(nn.Module):
             # print('upsample')
             x = self.upsample(x)
         # print("after,", x.shape)
-        return x
-
-
-class UVitBlock(nn.Module):
-    def __init__(
-        self,
-        channels,
-        num_res_blocks: int,
-        hidden_size,
-        hidden_dropout,
-        ln_elementwise_affine,
-        layer_norm_eps,
-        use_bias,
-        block_num_heads,
-        attention_dropout,
-        downsample: bool,
-        upsample: bool,
-    ):
-        super().__init__()
-
-        if downsample:
-            self.downsample = Downsample2D(
-                channels,
-                use_conv=True,
-                padding=0,
-                name="Conv2d_0",
-                kernel_size=2,
-                norm_type="rms_norm",
-                eps=layer_norm_eps,
-                elementwise_affine=ln_elementwise_affine,
-                bias=use_bias,
-            )
-        else:
-            self.downsample = None
-
-        self.res_blocks = nn.ModuleList(
-            [
-                ConvNextBlock(
-                    channels,
-                    layer_norm_eps,
-                    ln_elementwise_affine,
-                    use_bias,
-                    hidden_dropout,
-                    hidden_size,
-                )
-                for i in range(num_res_blocks)
-            ]
-        )
-
-        self.attention_blocks = nn.ModuleList(
-            [
-                SkipFFTransformerBlock(
-                    channels,
-                    block_num_heads,
-                    channels // block_num_heads,
-                    hidden_size,
-                    use_bias,
-                    attention_dropout,
-                    channels,
-                    attention_bias=use_bias,
-                    attention_out_bias=use_bias,
-                )
-                for _ in range(num_res_blocks)
-            ]
-        )
-
-        if upsample:
-            self.upsample = Upsample2D(
-                channels,
-                use_conv_transpose=True,
-                kernel_size=2,
-                padding=0,
-                name="conv",
-                norm_type="rms_norm",
-                eps=layer_norm_eps,
-                elementwise_affine=ln_elementwise_affine,
-                bias=use_bias,
-                interpolate=False,
-            )
-        else:
-            self.upsample = None
-
-    def forward(self, x, pooled_text_emb, encoder_hidden_states, cross_attention_kwargs):
-        if self.downsample is not None:
-            x = self.downsample(x)
-
-        for res_block, attention_block in zip(self.res_blocks, self.attention_blocks):
-            x = res_block(x, pooled_text_emb)
-
-            batch_size, channels, height, width = x.shape
-            x = x.view(batch_size, channels, height * width).permute(0, 2, 1)
-            x = attention_block(
-                x, encoder_hidden_states=encoder_hidden_states, cross_attention_kwargs=cross_attention_kwargs
-            )
-            x = x.permute(0, 2, 1).view(batch_size, channels, height, width)
-
-        if self.upsample is not None:
-            x = self.upsample(x)
-
         return x
 
 class Transformer2DModel(ModelMixin, ConfigMixin, PeftAdapterMixin, FromOriginalModelMixin):

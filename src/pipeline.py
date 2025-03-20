@@ -13,17 +13,14 @@
 # limitations under the License.
 import sys
 from typing import Any, Callable, Dict, List, Optional, Tuple, Union
-
 import torch
 from transformers import CLIPTextModelWithProjection, CLIPTokenizer
-
 from diffusers.image_processor import VaeImageProcessor
 from diffusers.models import VQModel
-
-from src.scheduler import Scheduler
 from diffusers.utils import replace_example_docstring
 from diffusers.pipelines.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
 
+from src.scheduler import Scheduler
 from src.transformer import Transformer2DModel
 
 

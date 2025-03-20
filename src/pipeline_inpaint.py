@@ -20,6 +20,8 @@ from diffusers.utils import replace_example_docstring
 from diffusers.pipelines.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
 from src.scheduler import Scheduler
 from src.transformer import Transformer2DModel
+from src.pipeline import _prepare_latent_image_ids
+
 
 EXAMPLE_DOC_STRING = """
     Examples:
@@ -27,21 +29,6 @@ EXAMPLE_DOC_STRING = """
         >>> pipe(prompt, input_image, mask).images[0].save("out.png")
         ```
 """
-
-def _prepare_latent_image_ids(batch_size, height, width, device, dtype):
-    latent_image_ids = torch.zeros(height // 2, width // 2, 3)
-    latent_image_ids[..., 1] = latent_image_ids[..., 1] + torch.arange(height // 2)[:, None]
-    latent_image_ids[..., 2] = latent_image_ids[..., 2] + torch.arange(width // 2)[None, :]
-
-    latent_image_id_height, latent_image_id_width, latent_image_id_channels = latent_image_ids.shape
-
-    latent_image_ids = latent_image_ids.reshape(
-        latent_image_id_height * latent_image_id_width, latent_image_id_channels
-    )
-    # latent_image_ids = latent_image_ids.unsqueeze(0).repeat(batch_size, 1, 1)
-
-    return latent_image_ids.to(device=device, dtype=dtype)
-
 
 class InpaintPipeline(DiffusionPipeline):
     image_processor: VaeImageProcessor

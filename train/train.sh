@@ -1,4 +1,5 @@
-accelerate launch --multi_gpu --gpu_ids '0,1,2,3' --num_processes 4 src/train_meissonic.py \
+# bash it in root path
+PYTHON_PATH='./' accelerate launch --multi_gpu --gpu_ids '0,1,2,3' --main_process_port 25011 --num_processes 4 train/train_meissonic.py \
         --output_dir  "../CKPT_OUTPUT_PATH" \
         --train_batch_size 4 \
         --gradient_accumulation_steps 2 \
@@ -9,7 +10,7 @@ accelerate launch --multi_gpu --gpu_ids '0,1,2,3' --num_processes 4 src/train_me
         --pretrained_model_architecture 'Meissonic' \
         --training_from_scratch True \
         --instance_dataset 'DATA_TYPE' \
-        --instance_data_dir  'DATAPATH.parquet' \
+        --instance_data_dir  '../parquets_father_dir/' \
         --resolution 1024 \
         --mixed_precision fp16 \
         --lr_scheduler constant \

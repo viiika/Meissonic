@@ -52,7 +52,7 @@ cd diffusers
 pip install -e .
 ```
 
-## 💡 Usage
+## 💡 Inference Usage
 
 ### Gradio Web UI
 
@@ -118,6 +118,31 @@ python app_fp8.py
   <img src="https://github.com/user-attachments/assets/b23a1603-399d-40d6-8e16-c077d3d12a08" width="320" alt="A white coffee mug, a solid black background">
   <p><i>"A white coffee mug, a solid black background"</i></p>
 </div>
+
+## 🎓 Training
+
+To train Meissonic, follow these steps:
+
+1. Install dependencies:
+   ```bash
+   cd train
+   pip install -r requirements.txt
+   ```
+
+2. Download the [Meissonic](https://huggingface.co/MeissonFlow/Meissonic) base model from Hugging Face.
+
+3. Prepare your dataset:
+   - Use the sample dataset: [MeissonFlow/splash](https://huggingface.co/datasets/MeissonFlow/splash/resolve/main/00-77.parquet)
+   - Or prepare your own dataset and dataset class following the format in line 100 in [dataset_utils.py](./train/src/dataset_utils.py) and line 656-680 in [train_meissonic.py](./train/train_meissonic.py)
+   - Modify [train.sh](./train/train.sh) with your dataset path
+
+4. Start training:
+   ```bash
+   bash train/train.sh
+   ```
+
+Note: For custom datasets, you'll likely need to implement your own dataset class.
+
 
 ## 📚 Citation
 

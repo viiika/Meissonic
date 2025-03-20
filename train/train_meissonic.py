@@ -17,46 +17,35 @@ import copy
 import logging
 import math
 import os
-import shutil
 from contextlib import nullcontext
 from pathlib import Path
-
-
 import sys
 sys.path.append(os.getcwd())
-
-
-# export HF_ENDPOINT=https://hf-mirror.com
-
 import torch
 import torch.nn.functional as F
 from accelerate import Accelerator
 from accelerate.logging import get_logger
 from accelerate.utils import ProjectConfiguration, set_seed
-from datasets import load_dataset
 from peft import LoraConfig
 from peft.utils import get_peft_model_state_dict
-from torch.utils.data import DataLoader, Dataset, default_collate
+from torch.utils.data import DataLoader, default_collate
 from torchvision import transforms
 from transformers import (
     CLIPTextModelWithProjection,
     CLIPTokenizer,
 )
-
 import diffusers.optimization
 from diffusers import EMAModel, VQModel 
 from src.scheduler import Scheduler
 from diffusers.loaders import LoraLoaderMixin
 from diffusers.utils import is_wandb_available
-
-from trainer_utils import save_checkpoint
-from dataset_utils import HuggingFaceDataset, MSCOCO600KDataset, PickaPicV2Dataset, MyParquetDataset
-from dataset_utils import tokenize_prompt, encode_prompt
-
-from torchvision.utils import save_image,make_grid
-
-from src.transformer import Transformer2DModel
 from src.pipeline import Pipeline
+from torchvision.utils import save_image,make_grid
+from datasets import load_dataset
+from train.trainer_utils import save_checkpoint
+from train.dataset_utils import MyParquetDataset, HuggingFaceDataset
+from train.dataset_utils import tokenize_prompt, encode_prompt
+from src.transformer import Transformer2DModel
 
 if is_wandb_available():
     import wandb
@@ -664,26 +653,20 @@ def main(args):
 
     total_batch_size = args.train_batch_size * accelerator.num_processes * args.gradient_accumulation_steps
 
-
-    if args.instance_dataset == "MSCOCO600K":
-        dataset = MSCOCO600KDataset(
-            data_root=args.instance_data_dir,
-            tokenizer=tokenizer,
-            size=args.resolution,
-            read_code = False,
-            text_encoder_architecture=args.text_encoder_architecture
-        )
-    elif args.instance_dataset == "PickaPicV2":
-        dataset = PickaPicV2Dataset(
-            data_root=args.instance_data_dir,
-            tokenizer=tokenizer,
-            size=args.resolution,
-            text_encoder_architecture=args.text_encoder_architecture
-        )
-    elif args.instance_dataset == "Meissonic":
+    if args.instance_dataset == "MyParquetDataset":
         dataset = MyParquetDataset(
-            parquet_dir=args.instance_data_dir,
+            root_dir=args.instance_data_dir,  # something like '../parquets_father_dir/'
             tokenizer=tokenizer,
+            size=args.resolution,
+            text_encoder_architecture=args.text_encoder_architecture
+        )
+    elif args.instance_dataset == 'HuggingFaceDataset':  # you can try this first, just download dataset from huggingface
+        dataset = HuggingFaceDataset(
+            hf_dataset=load_dataset(args.instance_data_dir, split="train"),  # something like '../parquets_father_dir/'
+            tokenizer=tokenizer,
+            image_key='image',
+            prompt_key='caption',
+            prompt_prefix=args.prompt_prefix,
             size=args.resolution,
             text_encoder_architecture=args.text_encoder_architecture
         )
