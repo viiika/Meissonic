@@ -20,6 +20,15 @@
 
 </div>
 
+## 📝 Meissonic Updates and Family Papers
+
+- [Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis](https://arxiv.org/abs/2410.08261) [ICLR 2025]
+- [Bag of Design Choices for Inference of High-Resolution Masked Generative Transformer](https://arxiv.org/abs/2411.10781)
+- [Di[𝙼]O: Distilling Masked Diffusion Models into One-step Generator](https://arxiv.org/abs/2503.15457)
+- More papers are coming soon!
+
+
+
 ![Meissonic Demos](./assets/demos.png)
 
 ## 🚀 Introduction
