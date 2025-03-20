@@ -15,6 +15,9 @@
 [![Demo](https://img.shields.io/badge/Live-Demo_Monetico-blue?logo=huggingface)](https://huggingface.co/spaces/Collov-Labs/Monetico)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2411.10781-b31b1b.svg)](https://arxiv.org/abs/2411.10781)
+
+[![arXiv](https://img.shields.io/badge/arXiv-2503.15457-b31b1b.svg)](https://arxiv.org/abs/2503.15457)
+
 </div>
 
 ![Meissonic Demos](./assets/demos.png)
