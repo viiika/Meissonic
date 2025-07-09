@@ -19,17 +19,21 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2503.15457-b31b1b.svg)](https://arxiv.org/abs/2503.15457)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.23606-b31b1b.svg)](https://arxiv.org/abs/2505.23606)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Huggingface-Model_Muddit-yellow)](https://huggingface.co/MeissonFlow/Muddit)
+[![Demo](https://img.shields.io/badge/Live-Demo_Muddit-blue?logo=huggingface)](https://huggingface.co/spaces/MeissonFlow/muddit)
 
 </div>
 
 ## 📝 Meissonic Updates and Family Papers
 
+- [MaskGIT: Masked Generative Image Transformer](https://arxiv.org/abs/2202.04200) [CVPR 2022]
+- [Muse: Text-To-Image Generation via Masked Generative Transformers](https://arxiv.org/abs/2301.00704) [ICML 2023]
 - [Meissonic: Revitalizing Masked Generative Transformers for Efficient High-Resolution Text-to-Image Synthesis](https://arxiv.org/abs/2410.08261) [ICLR 2025]
 - [Bag of Design Choices for Inference of High-Resolution Masked Generative Transformer](https://arxiv.org/abs/2411.10781)
 - [Di[𝙼]O: Distilling Masked Diffusion Models into One-step Generator](https://arxiv.org/abs/2503.15457)
 - [Muddit: Liberating Generation Beyond Text-to-Image with a Unified Discrete Diffusion Model](https://arxiv.org/abs/2505.23606)
 - More papers are coming soon!
-
+See [MeissonFlow Research](https://huggingface.co/MeissonFlow) (Organization Card) for more about our vision.
 
 
 ![Meissonic Demos](./assets/demos.png)
@@ -147,8 +151,8 @@ To train Meissonic, follow these steps:
 2. Download the [Meissonic](https://huggingface.co/MeissonFlow/Meissonic) base model from Hugging Face.
 
 3. Prepare your dataset:
-   - Use the sample dataset: [MeissonFlow/splash](https://huggingface.co/datasets/MeissonFlow/splash/resolve/main/00-77.parquet)
-   - Or prepare your own dataset and dataset class following the format in line 100 in [dataset_utils.py](./train/src/dataset_utils.py) and line 656-680 in [train_meissonic.py](./train/train_meissonic.py)
+   - Use the sample dataset: [MeissonFlow/splash](https://huggingface.co/datasets/MeissonFlow/park/resolve/main/00001.parquet)
+   - Or prepare your own dataset and dataset class following the format in line 100 in [dataset_utils.py](./train/dataset_utils.py) and line 656-680 in [train_meissonic.py](./train/train_meissonic.py)
    - Modify [train.sh](./train/train.sh) with your dataset path
 
 4. Start training:
