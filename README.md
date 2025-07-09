@@ -17,6 +17,9 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2411.10781-b31b1b.svg)](https://arxiv.org/abs/2411.10781)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.15457-b31b1b.svg)](https://arxiv.org/abs/2503.15457)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Huggingface-Model_Muddit-yellow)](https://huggingface.co/Yuanzhi/DiMO)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/yuanzhi-zhu/DiMO)
+
 
 [![arXiv](https://img.shields.io/badge/arXiv-2505.23606-b31b1b.svg)](https://arxiv.org/abs/2505.23606)
 [![Hugging Face](https://img.shields.io/badge/🤗%20Huggingface-Model_Muddit-yellow)](https://huggingface.co/MeissonFlow/Muddit)
