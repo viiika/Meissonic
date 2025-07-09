@@ -152,7 +152,7 @@ To train Meissonic, follow these steps:
 2. Download the [Meissonic](https://huggingface.co/MeissonFlow/Meissonic) base model from Hugging Face.
 
 3. Prepare your dataset:
-   - Use the sample dataset: [MeissonFlow/splash](https://huggingface.co/datasets/MeissonFlow/park/resolve/main/00001.parquet)
+   - Use the sample dataset: [MeissonFlow/splash](https://huggingface.co/datasets/MeissonFlow/lemon/resolve/main/0000.parquet)
    - Or prepare your own dataset and dataset class following the format in line 100 in [dataset_utils.py](./train/dataset_utils.py) and line 656-680 in [train_meissonic.py](./train/train_meissonic.py)
    - Modify [train.sh](./train/train.sh) with your dataset path
 
