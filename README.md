@@ -28,6 +28,8 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2507.04947-b31b1b.svg)](https://arxiv.org/abs/2507.04947)
 
+[![arXiv](https://img.shields.io/badge/arXiv-2508.10684-b31b1b.svg)](https://arxiv.org/abs/2508.10684)
+
 </div>
 
 ## 📝 Meissonic Updates and Family Papers
@@ -39,6 +41,7 @@
 - [Di[𝙼]O: Distilling Masked Diffusion Models into One-step Generator](https://arxiv.org/abs/2503.15457) [ICCV 2025]
 - [Muddit: Liberating Generation Beyond Text-to-Image with a Unified Discrete Diffusion Model](https://arxiv.org/abs/2505.23606)
 - [DC-AR: Efficient Masked Autoregressive Image Generation with Deep Compression Hybrid Tokenizer](https://arxiv.org/pdf/2507.04947) [ICCV 2025]
+- [MDNS: Masked Diffusion Neural Sampler via Stochastic Optimal Control](https://arxiv.org/abs/2508.10684)
 - More papers are coming soon!
 See [MeissonFlow Research](https://huggingface.co/MeissonFlow) (Organization Card) for more about our vision.
 
