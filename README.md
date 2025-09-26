@@ -30,6 +30,8 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2508.10684-b31b1b.svg)](https://arxiv.org/abs/2508.10684)
 
+[![arXiv](https://img.shields.io/badge/arXiv-2509.19244-b31b1b.svg)](https://arxiv.org/abs/2509.19244)
+
 </div>
 
 ## 📝 Meissonic Updates and Family Papers
@@ -42,6 +44,8 @@
 - [Muddit: Liberating Generation Beyond Text-to-Image with a Unified Discrete Diffusion Model](https://arxiv.org/abs/2505.23606)
 - [DC-AR: Efficient Masked Autoregressive Image Generation with Deep Compression Hybrid Tokenizer](https://arxiv.org/pdf/2507.04947) [ICCV 2025]
 - [MDNS: Masked Diffusion Neural Sampler via Stochastic Optimal Control](https://arxiv.org/abs/2508.10684)
+- [Lavida-O: Elastic Large Masked Diffusion Models for Unified Multimodal Understanding and Generation](https://arxiv.org/abs/2509.19244)
+- [Lumina-DiMOO: An Omni Diffusion Large Language Model for Multi-Modal Generation and Understanding]()
 - More papers are coming soon!
 See [MeissonFlow Research](https://huggingface.co/MeissonFlow) (Organization Card) for more about our vision.
 
