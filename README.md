@@ -31,6 +31,9 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2508.10684-b31b1b.svg)](https://arxiv.org/abs/2508.10684)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2509.19244-b31b1b.svg)](https://arxiv.org/abs/2509.19244)
+[![arXiv](https://img.shields.io/badge/arXiv-2509.23919-b31b1b.svg)](https://arxiv.org/abs/2509.23919)
+[![arXiv](https://img.shields.io/badge/arXiv-2509.25171-b31b1b.svg)](https://arxiv.org/abs/2509.25171)
+
 
 </div>
 
@@ -46,6 +49,8 @@
 - [MDNS: Masked Diffusion Neural Sampler via Stochastic Optimal Control](https://arxiv.org/abs/2508.10684)
 - [Lavida-O: Elastic Large Masked Diffusion Models for Unified Multimodal Understanding and Generation](https://arxiv.org/abs/2509.19244)
 - [Lumina-DiMOO: An Omni Diffusion Large Language Model for Multi-Modal Generation and Understanding]()
+- [Token Painter: Training-Free Text-Guided Image Inpainting via Mask Autoregressive Models](https://arxiv.org/abs/2509.23919)
+- [TR2-D2: Tree Search Guided Trajectory-Aware Fine-Tuning for Discrete Diffusion](https://arxiv.org/abs/2509.25171)
 - More papers are coming soon!
 See [MeissonFlow Research](https://huggingface.co/MeissonFlow) (Organization Card) for more about our vision.
 
