@@ -53,6 +53,7 @@
 - [Token Painter: Training-Free Text-Guided Image Inpainting via Mask Autoregressive Models](https://arxiv.org/abs/2509.23919)
 - [TR2-D2: Tree Search Guided Trajectory-Aware Fine-Tuning for Discrete Diffusion](https://arxiv.org/abs/2509.25171)
 - [OneFlow: Concurrent Mixed-Modal and Interleaved Generation with Edit Flows](https://arxiv.org/abs/2510.03506)
+- [Diffuse Everything: Multimodal Diffusion Models on Arbitrary State Spaces](https://arxiv.org/abs/2506.07903) [ICML 2025]
 - [Towards Better & Faster Autoregressive Image Generation: From the Perspective of Entropy](https://arxiv.org/abs/2510.09012) [NeurIPS 2025]
 - More papers are coming soon!
 See [MeissonFlow Research](https://huggingface.co/MeissonFlow) (Organization Card) for more about our vision.
