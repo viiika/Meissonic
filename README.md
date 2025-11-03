@@ -58,6 +58,7 @@
 - [Diffuse Everything: Multimodal Diffusion Models on Arbitrary State Spaces](https://arxiv.org/abs/2506.07903) [ICML 2025]
 - [Towards Better & Faster Autoregressive Image Generation: From the Perspective of Entropy](https://arxiv.org/abs/2510.09012) [NeurIPS 2025]
 - [🌟][From Masks to Worlds: A Hitchhiker's Guide to World Models](https://arxiv.org/abs/2510.20668)
+- [SOFT-DI[M]O: IMPROVING ONE-STEP DISCRETE IM-AGE GENERATION WITH SOFT EMBEDDINGS](https://arxiv.org/abs/2509.22925)
 - More papers are coming soon!
 See [MeissonFlow Research](https://huggingface.co/MeissonFlow) (Organization Card) for more about our vision.
 
