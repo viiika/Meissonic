@@ -63,6 +63,7 @@
 - [Sparse-LaViDa: Sparse Multimodal Discrete Diffusion Language Models](https://arxiv.org/abs/2512.14008)
 - [Reinforcement Learning Meets Masked Generative Models: Mask-GRPO for Text-to-Image Generation](https://arxiv.org/abs/2510.13418)
 - [MaskFocus: Focusing Policy Optimization on Critical Steps for Masked Image Generation](https://arxiv.org/abs/2512.18766)
+- [Co-GRPO: Co-Optimized Group Relative Policy Optimization for Masked Diffusion Model](https://arxiv.org/abs/2512.22288)
 
 - More papers are coming soon!
 See [MeissonFlow Research](https://huggingface.co/MeissonFlow) (Organization Card) for more about our vision.
