@@ -67,7 +67,10 @@
 - [MaskFocus: Focusing Policy Optimization on Critical Steps for Masked Image Generation](https://arxiv.org/abs/2512.18766)
 - [Co-GRPO: Co-Optimized Group Relative Policy Optimization for Masked Diffusion Model](https://arxiv.org/abs/2512.22288)
 - [Synergistic Multimodal Diffusion Transformer: Unifying and Enhancing Multimodal Generation via Adaptive Discrete Diffusion](https://www.preprints.org/frontend/manuscript/0aaaa5c92ad47499c4bfdcc229baf1d1/download_pub#page=2.28)
-- [🌟][Prism: Efficient Test-Time Scaling via Hierarchical Search and Self-Verification for Discrete Diffusion Language Models](https://arxiv.org/abs/2602.01842)
+- [🌟][Prism: Efficient Test-Time Scaling via Hierarchical Search and Self-Verification for Discrete Diffusion Language Models](https://arxiv.org/abs/2602.01842) [ICML 2026]
+- [Plug-and-Play Guidance for Discrete Diffusion Models via Gradient-Informed Logit Correction](https://arxiv.org/abs/2606.06303) [ICML 2026]
+- [UDM-GRPO: Stable and Efficient Group Relative Policy Optimization for Uniform Discrete Diffusion Models](https://arxiv.org/abs/2604.18518) [ICML 2026]
+
 
 - More papers are coming soon!
 See [MeissonFlow Research](https://huggingface.co/MeissonFlow) (Organization Card) for more about our vision.
