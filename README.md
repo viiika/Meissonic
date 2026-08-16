@@ -226,8 +226,8 @@ We thank the community and contributors for their invaluable support in developi
 ---
 
 <p align="center">
-  <a href="https://star-history.com/#viiika/Meissonic&Date">
-    <img src="https://api.star-history.com/svg?repos=viiika/Meissonic&type=Date" alt="Star History Chart">
+  <a href="https://star-history.dera.page/#viiika/Meissonic&Date">
+    <img src="https://star-history.dera.page/svg?repos=viiika/Meissonic&type=Date" alt="Star History Chart">
   </a>
 </p>
 
