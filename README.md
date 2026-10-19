@@ -72,6 +72,7 @@
 - [Plug-and-Play Guidance for Discrete Diffusion Models via Gradient-Informed Logit Correction](https://arxiv.org/abs/2606.06303) [ICML 2026]
 - [UDM-GRPO: Stable and Efficient Group Relative Policy Optimization for Uniform Discrete Diffusion Models](https://arxiv.org/abs/2604.18518) [ICML 2026]
 - [Best of Both Worlds: Multimodal Reasoning and Generation via Unified Discrete Flow Matching](https://arxiv.org/abs/2602.12221) [ICML 2026]
+- [MaskSense: Confronting the Visual Exploration Trap in Masked Image Generation](https://arxiv.org/abs/2610.17009) [NeurIPS 2026]
 
 
 - More papers are coming soon!
