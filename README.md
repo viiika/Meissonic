@@ -65,7 +65,7 @@
 - [Sparse-LaViDa: Sparse Multimodal Discrete Diffusion Language Models](https://arxiv.org/abs/2512.14008)
 - [Reinforcement Learning Meets Masked Generative Models: Mask-GRPO for Text-to-Image Generation](https://arxiv.org/abs/2510.13418)
 - [MaskFocus: Focusing Policy Optimization on Critical Steps for Masked Image Generation](https://arxiv.org/abs/2512.18766) [CVPR 2026]
-- [Co-GRPO: Co-Optimized Group Relative Policy Optimization for Masked Diffusion Model](https://arxiv.org/abs/2512.22288)
+- [Co-GRPO: Co-Optimized Group Relative Policy Optimization for Masked Diffusion Model](https://arxiv.org/abs/2512.22288) [NeurIPS 2026] 
 - [Synergistic Multimodal Diffusion Transformer: Unifying and Enhancing Multimodal Generation via Adaptive Discrete Diffusion](https://www.preprints.org/frontend/manuscript/0aaaa5c92ad47499c4bfdcc229baf1d1/download_pub#page=2.28)
 - [🌟][Prism: Efficient Test-Time Scaling via Hierarchical Search and Self-Verification for Discrete Diffusion Language Models](https://arxiv.org/abs/2602.01842) [ICML 2026]
 - [Threshold-Guided Optimization for Visual Generative Models](https://arxiv.org/abs/2605.04653) [ICML 2026]
